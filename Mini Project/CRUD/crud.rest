@@ -1,0 +1,142 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email" : "lakshman@gmail.com",
+    "password" : "llaaxx@12345"
+}
+
+###
+
+GET http://localhost:3000/getAllusers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InByYXNhbnRoMTcwOTAwMUBnbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTMxNTY3NjZ9.ik2FIl9lQxptvj0RyOgfIypSkqjxq6piJUSZEuXNgRg
+
+###
+GET http://localhost:3000/getUserById/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InByYXNhbnRoMTcwOTAwMUBnbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTMxNTY3NjZ9.ik2FIl9lQxptvj0RyOgfIypSkqjxq6piJUSZEuXNgRg
+
+###
+POST http://localhost:3000/insertUser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InByYXNhbnRoMTcwOTAwMUBnbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTI4MjE1MjV9.PEjCIxFsfutRAGvwg-geZXurKC0VqedRTQJstSQrdaA
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+----WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="com.ea.game.nfs14_row_Screenshot_2021.02.06_23.50.16.png"
+Content-Type: image/png
+
+< C:\Users\prasanth\Pictures\BlueStacks\com.ea.game.nfs14_row_Screenshot_2021.02.06_23.50.16.png
+----WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="data"
+
+{
+    "user_name" : "vimal",
+    "gender" : "male",
+    "email" : "vimal@gmail.com",
+    "job_title" : "software developer",
+    "salary" : 35000,
+    "address" : "no:235 , thillai nagar",
+    "district" : "Cuddalore",
+    "town" : "chidambaram",
+    "pincode" : 699897,
+    "password" : "vimal@12345",
+    "role" : "user",
+    "familyDetails" : [
+              {
+                "full_name": "Arumugam",
+                "relationship": "father",
+                "occupation": "TNEB officer",
+                "education_level": "B.E-EEE",
+                "contact_no": 8786756009
+              },
+              {
+                "full_name": "Vanitha",
+                "relationship": "mother",
+                "occupation": "house wife",
+                "education_level": "8th",
+                "contact_no": 8765432109
+              }
+            ]
+  }
+
+----WebKitFormBoundary7MA4YWxkTrZu0gW
+###
+
+POST http://localhost:3000/insertUser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InByYXNhbnRoMTcwOTAwMUBnbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTI4MjE1MjV9.PEjCIxFsfutRAGvwg-geZXurKC0VqedRTQJstSQrdaA
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="com.ea.game.nfs14_row_Screenshot_2021.02.06_23.50.16.png"
+Content-Type: image/png
+
+< C:\Users\prasanth\Pictures\BlueStacks\com.ea.game.nfs14_row_Screenshot_2021.02.06_23.50.16.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="data"
+Content-Type: application/json
+
+{
+    "user_name" : "vimal",
+    "gender" : "male",
+    "email" : "vimal@gmail.com",
+    "job_title" : "software developer",
+    "salary" : 35000,
+    "address" : "no:235 , thillai nagar",
+    "district" : "Cuddalore",
+    "town" : "chidambaram",
+    "pincode" : 699897,
+    "password" : "vimal@12345",
+    "role" : "user",
+    "familyDetails" : [
+              {
+                "full_name": "Arumugam",
+                "relationship": "father",
+                "occupation": "TNEB officer",
+                "education_level": "B.E-EEE",
+                "contact_no": 8786756009
+              },
+              {
+                "full_name": "Vanitha",
+                "relationship": "mother",
+                "occupation": "house wife",
+                "education_level": "8th",
+                "contact_no": 8765432109
+              }
+            ]
+}
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+PUT http://localhost:3000/updateUser/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InByYXNhbnRoMTcwOTAwMUBnbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTMxNTY3NjZ9.ik2FIl9lQxptvj0RyOgfIypSkqjxq6piJUSZEuXNgRg
+Content-Type: application/json
+
+{
+  "address" : "No:666 , sairam nagar" ,
+  "district" : "Cuddalore",
+  "town" : "Chidambaram",
+  "pincode" : 678876
+}
+
+
+
+###
+DELETE  http://localhost:3000/deleteUser/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InByYXNhbnRoMTcwOTAwMUBnbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTMxNTY3NjZ9.ik2FIl9lQxptvj0RyOgfIypSkqjxq6piJUSZEuXNgRg
+
+###
+POST http://localhost:3000/forget-password
+Content-Type: application/json
+
+{
+  "email" : "lakshman@gmail.com"
+}
+
+###
+POST http://localhost:3000/reset-password
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJpYXQiOjE3MTMxODU1MTgsImV4cCI6MTcxMzE4OTExOH0.JzlMF40FZszpECmQ3AYiAXrYMLpsRBjcbya5vyaCbcM
+Content-Type: application/json
+
+{
+  "password" : "laxxxx@12345"
+}
+
